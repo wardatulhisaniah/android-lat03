@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btArsenal"
+        android:layout_width="235dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="43dp"
+        android:text="ARSENAL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btPorto"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="43dp"
+        android:text="PORTO"
+        app:layout_constraintStart_toEndOf="@+id/btArsenal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btBarcelona"
+        android:layout_width="381dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="BARCELONA"
+        app:layout_constraintEnd_toEndOf="@+id/btPorto"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="@+id/btArsenal"
+        app:layout_constraintTop_toBottomOf="@+id/btPorto"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btColoColo"
+        android:layout_width="120dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:text="COLO-COLO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btBarcelona"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btBocaJunior"
+        android:layout_width="120dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="18dp"
+        android:text="BOCAJUNIOR"
+        app:layout_constraintStart_toEndOf="@+id/btColoColo"
+        app:layout_constraintTop_toBottomOf="@+id/btBarcelona"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btFiorentina"
+        android:layout_width="118dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="18dp"
+        android:text="FIORENTINA"
+        app:layout_constraintEnd_toEndOf="@+id/btBarcelona"
+        app:layout_constraintStart_toEndOf="@+id/btBocaJunior"
+        app:layout_constraintTop_toBottomOf="@+id/btBarcelona"
+        tools:ignore="HardcodedText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
